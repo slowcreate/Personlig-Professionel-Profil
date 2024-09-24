@@ -1,24 +1,22 @@
 ---
-import Button from '../components/Button.astro';
-import { Image } from 'astro:assets';
 ---
-<div x-data="{ showmenu: false }" class="fixed top-0 left-0 right-0 z-50 bg-[#262626] text-white p-3 lg:p-4">
+<div x-data="{ showmenu: false }" class="top-0 left-0 right-0 z-50  text-white p-3 lg:p-4">
     <div id="navbar" class="flex justify-end items-end">
         <div id="logo" class="ml-4">
         </div>
         <nav id="desktopmenu" class="hidden lg:block mx-10 -ml-10">
             <ul class="flex flex-row gap-8">
-                <li><a href="/saadan" class="transition hover:text-[#1E35FE]"><h5 class="text-white">who am I?</h5></a></li>
-                <li><a href="#" class="transition hover:text-[#1E35FE]"><h5 class="text-white">what do you get?</h5></a></li>
-                <li><a href="#" class="transition hover:text-[#1E35FE]"><h5 class="text-white">what can you give me?</h5></a></li>
-                <li><a href="#" class="transition hover:text-[#1E35FE]"><h5 class="text-white">why me?</h5></a></li>  
-                <li><a href="#" class="transition hover:text-[#1E35FE]"><h5>let's connect!</h5></a></li>
+                <li><a href="/saadan"><h5 class="transition hover:text-[#1E35FE]">who am I?</h5></a></li>
+                <li><a href="#"><h5 class="transition hover:text-[#1E35FE]">what do you get?</h5></a></li>
+                <li><a href="#"><h5 class="transition hover:text-[#1E35FE]">what can you give me?</h5></a></li>
+                <li><a href="#"><h5 class="transition hover:text-[#1E35FE]">why me?</h5></a></li>  
+                <li><a href="#"><h6 class="transition hover:text-[#1E35FE]">let's connect!</h6></a></li>
             </ul>
         </nav> 
         <div class="hidden lg:block">
         </div> 
         <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="#384aeb" class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="#384aeb" class="w-14 h-14">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
         </button>
     </div>
@@ -27,11 +25,11 @@ import { Image } from 'astro:assets';
     <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul>
-            <li class="text-center py-2"><a href="/saadan" class="transition hover:text-[#1E35FE]"><h5 class="text-white">who am I?</h5></a></li>
+            <li class="text-center py-2"><a href="" class="transition hover:text-[#1E35FE]"><h5 class="text-white">who am I?</h5></a></li>
             <li class="text-center py-2"><a href="#" class="transition hover:text-[#1E35FE]"><h5 class="text-white">what do you get?</h5></a></li>
             <li class="text-center py-2"><a href="#" class="transition hover:text-[#1E35FE]"><h5 class="text-white">what can you give me?</h5></a></li>
             <li class="text-center py-2"><a href="#" class="transition hover:text-[#1E35FE]"><h5 class="text-white">why me?</h5></a></li>  
-            <li class="text-center py-2"><a href="#" class="transition hover:text-[#1E35FE]"><h5>let's connect!</h5></a></li>
+            <li class="text-center py-2"><a href="#" class="transition hover:text-[#1E35FE]"><h6>let's connect!</h6></a></li>
         </ul>
     </nav>
 </div>

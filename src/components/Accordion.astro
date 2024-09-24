@@ -1,0 +1,16 @@
+---
+const {summary} = Astro.props;
+---
+<!-- Klassen group gør det muligt at style child-elementerne baseret på, om details er åbent eller lukket -->
+<details class="group border-b-4 border-[#0a1748] p-8 w-full md:max-w-3xl">
+    <summary class="flex justify-between items-center cursor-pointer">
+        <h5>{summary}</h5>
+        <svg class="transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
+            <path d="M12.5226 2L3.99999 15.2477L12.5226 28.4954" stroke="#2B3587" stroke-width="6"/>
+        </svg>
+    </summary>
+    <div class="py-7">
+        <slot/>
+    </div>
+</details>
+

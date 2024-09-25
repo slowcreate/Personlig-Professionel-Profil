@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import FollowtheArrow from "../components/FollowtheArrow.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import Baggrund from '../components/Baggrund.astro';
@@ -26,19 +27,23 @@ import { Image } from 'astro:assets';
 		<Baggrund></Baggrund>
 	</article>
 	<article class="-translate-y-[700px] md:-translate-y-[1000px]">
-		<section class="flex flex-col justify-start mx-16 md:ml-24 lg:ml-32 mt-96">
+		<section id="who" class="flex flex-col justify-start mx-16 md:ml-24 lg:ml-32 mt-96">
 			<h1 class="text-start mb-16">who am I?</h1>
 			<p class="mx-2 w-[350px] md:mx-6 md:w-[450px] lg:w-[550px]">Hi, I'm Selma, a 24-year-old multimedia-student at KEA, living in Copenhagen, originally from Svendborg. I love combining creativity and technology to create engaging, functional designs that enhance the user experience.<br> <br> When I’m not lost in pixels and prototypes, I enjoy capturing natural, storytelling moments with my Nikon D5200 and 35mm lens.</p>
 			<!-- <Image src="" alt=""></Image> -->
 		</section>
-		<section class="mt-[370px] mx-16 md:ml-24 lg:ml-40">
+		<section id="whatdoyouget" class="mt-[370px] mx-16 md:ml-24 lg:ml-40">
 			<h1 class="mb-16">what do you get?</h1>		 
 			<p>My approach focuses on creating responsive designs that adapt seamlessly to different screen sizes, optimizing the user experience across all devices. I apply UX design principles to ensure an intuitive and efficient user journey.</p>
 		</section>
-		<section class="mt-[370px] mx-16 md:ml-24 lg:ml-40">
+		<section id="whatyougive" class="mt-[370px] mx-16 md:ml-24 lg:ml-40">
 			<h1 class="mb-16">what can you give me?</h1>
 			<p>I'm looking for an internship to gain hands-on experience and strengthen my skills in interaction design, UI/UX, and responsive design. I'm eager to learn from experienced designers and deepen my understanding of design processes and different Adobe Programs.</p>
 			<div class="relative">
+				<div class="flex flex-row">
+					<h6 class="text-[#1e35fe] uppercase flex">before</h6>
+					<h6 class="text-[#1e35fe] uppercase flex justify-end items-end">after</h6>
+				</div>
 				<svg class="absolute" id="first-bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 129">
 				  <defs>
 					<style>
@@ -80,8 +85,39 @@ import { Image } from 'astro:assets';
 				</svg>
 			</div>
 		</section>
-		<section>
-			<h1 class="">why me?</h1>
+			<FollowtheArrow></FollowtheArrow>
+		<section id="whyme">
+			<h1 class="mt-72 md:mt-[550px]">why me?</h1>
+			<div class="md:grid grid-cols-2">
+			<div>
+				<p>On the right you see my most recent project, which was developed in a group-setting, where i was a part of making the mock-up and coding the front-page.</p>
+				<p>I love working with others and thrive in a team environment, where I learn from my fellow teammates as well as sharing my knowledge. </p>
+				<p>See more projects:</p>
+				<ul class="uppercase">
+					<h6><a href="">Digital cleanup day</a></h6>
+					<h6><a href="">Flid marked</a></h6>
+					<h6><a href="">Vild mad</a></h6>
+					<h6><a href="">Ark books</a></h6>
+				</ul>
+			</div>
+			<div class="relative">
+				<div class="absolute left-3 top-5 w-[228px]">
+					<video autoplay loop muted src="Cleanup_video.webm"></video>
+				</div>
+				<div class="absolute w-[250px]">
+					<svg id="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352.41 757">
+						<defs>
+							<style>
+							.phone_fill {
+								fill: #236eff;
+							}
+							</style>
+						</defs>
+						<path class="phone_fill" d="M351.82,215.55c-10.16-8.33-.27-14.56,0-15.52.75-2.71.84-53.99,0-56.67-.69-2.16-3.89-2.34-4.05-2.73-2.11-5.35,3.58-83.23-3.22-106.01-4.69-15.63-21.48-31.19-35.95-33.35-26.7-3.99-218.28,3.04-265.73,0C-16.06,17.63,9.82,91.4,3.69,125.08c-.09.51-3.14,1.34-3.23,1.83-.33,1.83-.53,35.69,0,37.46.29.93,4.13,2.69,4.05,3.66-.11,1.13-3.83,2.2-4.05,2.74-.62,1.69-.6,34.87,0,36.56.73,2.01,3.82.47,4.05,3.66.09,1.36-3.65.62-4.05,1.83-.93,2.92.71,40.2,0,49.35l3.23,2.73v444.12c3.74,26.59,19.55,44.37,43.22,47.99h257.66c26.17-4.5,41.87-24.47,43.2-54.38l-.8-449.61c8.61-1.85,3.53-21.32,4.85-37.46ZM147.86,31.42c2.6-1.17,53.16-1.19,55.74,0,.89.39,1.58,2.16,1.22,3.19-1.07,2.94-53.48,2.38-56.14,1.38-1.36-.51-3.02-3.58-.82-4.56ZM333.23,704.45c-3.43,11.17-12.65,19.88-23.01,21.47-25.15,3.91-222.26-2.96-268.97,0-12.65-3.13-20.72-10.79-23.83-25.13V51.06c1.49-11.41,11.47-22.47,21.39-24.22,2.53-.43,45.32-.47,47.67,0,13.79,2.84,13.38,23.71,28.26,26.5,5.98,1.13,115.18,1.09,121.16,0,14.74-2.65,14.79-22.27,28.26-26.5,23.32,3.47,58.46-11.72,69.06,20.56v657.05Z"/>
+					</svg>
+				</div>
+			</div>
+			</div>
 		</section>
 	</article>
 </MainLayout>

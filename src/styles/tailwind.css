@@ -44,4 +44,7 @@
   p {
     @apply text-base md:text-base w-[300px] md:mx-6 md:w-[350px] lg:w-[450px];
   }
+  a {
+    @apply hover:underline;
+  }
 }

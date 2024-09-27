@@ -33,7 +33,7 @@
     @apply text-2xl md:text-xl mt-0;
   }
   h4 {
-    @apply text-xl md:text-3xl;
+    @apply font-black text-[#384AEB] uppercase text-xl md:text-3xl;
   }
   h5 {
     @apply text-lg md:text-xl;
@@ -43,9 +43,6 @@
   }
   p {
     @apply text-base md:text-base w-[300px] md:mx-6 md:w-[350px] lg:w-[450px];
-  }
-  a {
-    @apply hover:underline;
   }
 }
 

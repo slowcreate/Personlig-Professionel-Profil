@@ -4,11 +4,11 @@ const {text} = Astro.props;
 
 <div class="overflow-hidden whitespace-nowrap background border-white border-y py-2 md:p-4">
   <div class="inline-block animate-scroll min-w-full">
-     <span class="gap-6 mr-24 text-white background text-lg md:text-2xl font-extrabold text-center">{text}</span>
+     <span class="text-white background text-lg md:text-2xl font-extrabold text-start">{text}</span>
     
   </div>
     <div class="inline-block animate-scroll min-w-full ">
-     <span class="gap-6 mr-24 text-white background text-lg md:text-2xl font-extrabold text-center">{text}</span>
+     <span class="text-white background text-lg md:text-2xl font-extrabold text-start">{text}</span>
   </div>
 </div>
 
@@ -22,9 +22,6 @@ const {text} = Astro.props;
 
 .overflow-hidden {
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .inline-block {

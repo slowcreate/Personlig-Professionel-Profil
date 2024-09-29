@@ -5,9 +5,10 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import Baggrund from '../components/Baggrund.astro';
 import { Image } from 'astro:assets';
+import portrait from "../assets/images/portrait.webp"
 import Scrollbar from "../components/Scrollbar.astro";
 ---
-<MainLayout title="PPP">
+<MainLayout title="Selma Louise Ø. K. K.">
 	<article class="">
 		<h2 class="pt-24 md:pt-36 lg:pt-52 lowercase w-[300px] md:w-[720px] lg:w-[950px] mx-auto text-center">Creating user interfaces with playful graphics and colors, always focused on functionality.</h2>
 		<section>
@@ -32,14 +33,19 @@ import Scrollbar from "../components/Scrollbar.astro";
 	<article class="-translate-y-[700px] md:-translate-y-[1000px] lg:-translate-y-[1300px]">
 		<section id="who" class="flex flex-col justify-start mx-16 md:ml-24 lg:ml-32 mt-[500px]">
 			<h1 class="text-start mb-16">who am I?</h1>
-			<p class="mx-2 w-[350px] md:mx-6 md:w-[450px] lg:w-[550px]">Hi, I'm Selma, a 24-year-old multimedia-student at KEA, living in Copenhagen, originally from Svendborg. I love combining creativity and technology to create engaging, functional designs that enhance the user experience.<br> <br> When I’m not lost in pixels and prototypes, I enjoy capturing natural, storytelling moments with my Nikon D5200 and 35mm lens.</p>
-			<!-- <Image src="" alt=""></Image> -->
+			<p class="mx-2 w-[350px] md:mx-6 md:w-[400px] lg:w-[550px]">Hi, I'm Selma, a 24-year-old multimedia-student at KEA, living in Copenhagen, originally from Svendborg. I love combining creativity and technology to create engaging, functional designs that enhance the user experience.<br> <br> When I’m not lost in pixels and prototypes, I enjoy capturing natural, storytelling moments with my Nikon D5200 and 35mm lens.</p>
 		</section>
-		<section id="whatdoyouget" class="mt-[370px]">
+		<div class="relative">
+				<svg class="absolute -top-[300px] md:-top-[500px]" width="full" height="923" viewBox="0 0 1500 923" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1928.95 835.734C1926.49 831.588 1822.37 924.915 1725.4 909.627C1677.02 902 1638.62 888.971 1638.62 888.971C1607.34 878.36 1602.82 873.146 1582.26 870.142C1578.2 869.551 1574.77 869.226 1571.33 869.157C1541.4 868.566 1497.57 878.69 1497.57 878.69C1465.54 886.499 1476.7 880.497 1416.43 892.117C1412.65 892.846 1385.45 898.105 1350.05 898.469C1334.09 898.637 1322.63 897.745 1314.28 889.079C1303.87 878.291 1304.71 862.121 1304.84 859.856C1305.62 846.212 1313.07 837.019 1320.92 826.994C1352.77 786.367 1367.44 765.578 1369.85 750.575C1372.2 735.936 1367.77 724.261 1365.66 710.135C1362.87 691.458 1372.24 678.036 1374.37 673.24C1377.97 665.091 1381.78 659.488 1387.79 651.215C1417.81 609.938 1428.53 604.369 1435.86 582.507C1440.43 568.863 1440.64 557.957 1440.65 554.983C1440.73 537.267 1434.96 527.926 1430.46 513.809C1421.36 485.285 1424.54 459.528 1428.42 428.109C1431.38 404.1 1433.96 407.95 1436.95 385.448C1440.3 360.188 1447.91 314.337 1425.89 276.31C1417.88 262.493 1408.09 250.055 1401.53 235.318C1395.61 222.029 1391.52 207.05 1389.35 192.52C1383.16 151.001 1393.42 144.6 1389.75 109.069C1388.26 94.6669 1380.38 36.9686 1339.62 12.7332C1331.67 8.00625 1325.08 6.10562 1318.48 4.24931C1258.1 -12.7234 1201 25.5993 1177.86 41.1293C1170.16 46.3044 1162.83 51.2627 1153.94 59.5004C1118.93 91.9095 1106.74 131.345 1103.5 143.049C1098.57 160.864 1102.67 156.752 1095.74 188.984C1088.52 222.585 1083.3 230.631 1083.43 252.128C1083.53 269.81 1087.11 271.277 1085.88 287.403C1084.68 303.337 1080.06 316.764 1073.28 331.137C1059.19 361.011 1042.63 375.964 1031.31 394.434C1014.17 422.387 998.976 452.014 986.285 482.444C977.973 502.376 973.792 520.89 962.924 595.767C943.909 726.758 947.738 745.188 927.281 775.982C904.046 810.952 872.768 826.831 851.047 837.861C840.602 843.164 763.828 880.753 680.636 855.094C646.458 844.552 642.098 832.863 605.149 826.895C598.148 825.763 566.983 821.124 515.083 831.189C476.954 838.58 466.556 842.455 427.873 858.457C372.153 881.506 305.039 901.463 247.083 874.051C226.353 864.243 208.179 849.245 187.707 838.782C149.766 819.391 108.006 807.663 66.5552 800.099C-11.0788 785.928 -90.2162 789.439 -167.531 803.989C-230.674 815.871 -293.062 832.504 -352.893 856.931C-392.859 873.249 -431.57 892.669 -468.919 914.752C-473.659 917.554 -469.402 925.216 -464.652 922.404C-394.31 880.812 -318.955 849.028 -240.4 829.19C-175.147 812.714 -108.71 800.395 -41.4172 799.799C41.3805 799.065 131.78 813.468 204.086 858.103C222.161 869.261 239.128 882.018 259.515 888.232C289.008 897.218 321.874 897.169 351.982 892.127C441.292 877.158 452.493 845.975 530.381 838.299C546.135 836.748 576.525 833.971 614.856 841.002C663.918 849.998 677.074 866.085 721.734 869.984C756.104 872.983 782.599 866.449 802.455 861.368C838.164 852.234 884.731 840.323 917.714 799.056C938.576 772.959 945.192 746.138 952.93 714.768C956.482 700.376 956.012 697.825 968.276 589.115C969.563 577.682 972.26 554.653 980.393 525.361C981.281 522.17 983.889 512.933 987.967 501.179C1003.02 457.81 1022.52 426.311 1031.94 410.102C1040.86 394.754 1050.52 379.968 1061.04 365.777C1075 346.938 1074.09 347.918 1077.56 341.709C1085.35 327.804 1098.67 304.011 1094.72 277.861C1093.12 267.274 1089.93 264.541 1089.09 250.892C1088.8 246.156 1088.61 237.037 1091.5 222.521C1095.1 204.544 1099.15 199.738 1104.23 183.568C1112.27 157.978 1106.31 156.615 1114.07 131.119C1117.45 119.991 1122.11 105.17 1133.59 90.196C1137.52 85.085 1143.14 78.7726 1159.62 66.3249C1176.03 53.9364 1192 41.8778 1216.57 30.5183C1222.57 27.7462 1248.84 15.8796 1284.91 10.0595C1308.83 6.19425 1318.11 8.05549 1323.19 9.43418C1345.17 15.397 1358.2 31.2963 1360.96 34.7283C1365.1 39.8836 1368.62 45.7972 1371.46 52.602C1386.2 87.9803 1381.08 129.252 1379.99 166.763C1379.68 177.438 1380.33 187.886 1381.95 198.162C1384.79 216.194 1389.89 229.237 1390.98 231.97C1402.91 261.823 1416.04 261.326 1427.31 287.674C1435.33 306.424 1435.81 323.343 1436.09 333.038C1436.5 347.465 1433.38 363.295 1427.13 394.365C1421.32 423.224 1420.78 420.841 1419.32 431.728C1416.5 452.733 1418.41 474.142 1421.65 494.97C1424.87 515.636 1432.25 537.203 1432.29 558.203C1432.34 580.951 1419.64 599.455 1407.54 617.231C1398.5 630.525 1388.49 642.835 1378.05 654.918C1364.37 670.744 1353.95 688.814 1357.31 711.248C1359.94 728.752 1364.5 742.071 1358.9 760.043C1355.88 769.729 1353.42 773.368 1328.05 808.805C1304.46 841.77 1300.12 848.713 1299.48 859.866C1298.81 871.491 1302.27 885.849 1310.52 895.278C1326.55 913.59 1356.02 908.026 1418.17 896.372C1506.57 879.793 1551.4 871.619 1582.26 877.385C1616.48 883.781 1609.8 891.768 1653.06 903.684C1679.63 911.005 1749.88 929.347 1828.94 901.231C1891.07 879.138 1930.52 838.358 1928.96 835.739L1928.95 835.734Z" fill="#1E35FE"/>
+				</svg>					
+				<Image class="absolute w-[125px] top-6 right-9 md:w-[200px] md:-top-64 md:right-14 lg:w-[300px] lg:-top-96 lg:right-24" src={portrait} alt="portrait of Selma"></Image> 
+		</div>
+		<section id="whatdoyouget" class="mt-[570px]">
 			<h1 class="mb-16">what do you get?</h1>
 			<Scrollbar text="HTML CSS JS Tailwind Alpine HTML CSS JS Tailwind Alpine HTML CSS JS Tailwind Alpine"></Scrollbar>
 			<div class="md:flex flex-row mx-16 md:ml-24 lg:ml-40">
-				<p class="my-16 :my-20">My approach focuses on creating responsive designs that adapt seamlessly to different screen sizes, optimizing the user experience across all devices. I apply UX design principles to ensure an intuitive and efficient user journey.</p>
+				<p class="my-16 :my-20 w-[300px] md:mx-6 md:w-[350px] lg:w-[450px]">My approach focuses on creating responsive designs that adapt seamlessly to different screen sizes, optimizing the user experience across all devices. I apply UX design principles to ensure an intuitive and efficient user journey.</p>
 			<a href="">
 					<div class="bg-[#384AEB] hover:bg-[#1F2EB4] flex flex-row items-center justify-center gap-5 w-60 h-24 lg:w-80 lg:h-32 p-6 rounded-3xl my-16">
 					<svg class="" width="80" height="80" viewBox="0 0 115 115" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,8 +57,8 @@ import Scrollbar from "../components/Scrollbar.astro";
 			</a>
 			<section class="md:grid grid-cols-2 mx-16 md:mx-24 lg:mx-40 gap-8">
 				<div>
-					<details class="group border-b-4 border-t-4 border-[#FFFFFF] p-3 w-full md:max-w-3xl">
-						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center cursor-pointer">
+					<details class="group p-6 w-full md:max-w-3xl">
+						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center ">
 							<svg width="75" height="75" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M26.5625 1.20902e-05H123.437C126.927 -0.00336079 130.382 0.699013 133.606 2.06694C136.831 3.43486 139.76 5.44148 142.227 7.97195C144.695 10.5024 146.651 13.5071 147.985 16.8139C149.318 20.1208 150.003 23.665 150 27.2436V122.756C150.003 126.335 149.318 129.879 147.985 133.186C146.651 136.493 144.695 139.498 142.227 142.028C139.76 144.559 136.831 146.565 133.606 147.933C130.382 149.301 126.927 150.003 123.437 150H26.5625C23.0733 150.003 19.6178 149.301 16.3936 147.933C13.1694 146.565 10.2399 144.559 7.77265 142.028C5.30544 139.498 3.34899 136.493 2.01526 133.186C0.681538 129.879 -0.00327677 126.335 1.1788e-05 122.756V27.2436C-0.00327677 23.665 0.681538 20.1208 2.01526 16.8139C3.34899 13.5071 5.30544 10.5024 7.77265 7.97195C10.2399 5.44148 13.1694 3.43486 16.3936 2.06694C19.6178 0.699013 23.0733 -0.00336079 26.5625 1.20902e-05Z" fill="#384AEB"/>
 								<path d="M59.6154 123.077C68.4661 123.077 75.641 115.615 75.641 106.41V89.7436H59.6154C50.7647 89.7436 43.5897 97.2055 43.5897 106.41C43.5897 115.615 50.7647 123.077 59.6154 123.077Z" fill="white"/>
@@ -60,18 +66,21 @@ import Scrollbar from "../components/Scrollbar.astro";
 								<path d="M43.5897 43.5898C43.5897 34.385 50.7647 26.9231 59.6154 26.9231H75.641V60.2564H59.6154C50.7647 60.2564 43.5897 52.7945 43.5897 43.5898Z" fill="white"/>
 								<path d="M75.641 26.9231H91.0256C99.5223 26.9231 106.41 34.385 106.41 43.5898C106.41 52.7945 99.5223 60.2564 91.0256 60.2564H75.641V26.9231Z" fill="white"/>
 								<path d="M106.41 75C106.41 83.1427 99.5223 89.7436 91.0256 89.7436C82.5289 89.7436 75.641 83.1427 75.641 75C75.641 66.8574 82.5289 60.2564 91.0256 60.2564C99.5223 60.2564 106.41 66.8574 106.41 75Z" fill="white"/>
-							</svg>            
-							<h6>Figma</h6>
-							<svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
+							</svg> 
+							<div class="w-[200px] md:w-[250-px] lg:w-[280px]">
+								<h6 class="text-[#384AEB]">Figma</h6>
+								<p>In Figma, I work on wireframing, prototyping, and creating design systems with styles, components, and variants.</p>
+							</div>           
+							<!-- <svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
 								<path d="M12.5226 2L3.99999 15.2477L12.5226 28.4954" stroke="#384AEB" stroke-width="6"/>
 							</svg>
 						</summary>
 						<div class="py-7">
 							<slot/>
-						</div>
+						</div> -->
 					</details>
-					<details class="group border-b-4 border-[#FFFFFF] p-3 w-full  ">
-						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center cursor-pointer">
+					<details class="group p-6 w-full  ">
+						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center">
 							<svg width="75" height="75" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#clip0_8_260)">
 								<path d="M66.2297 117.694V124.072C66.23 126.568 65.7194 129.04 64.7272 131.346C63.7349 133.652 62.2803 135.747 60.4466 137.511L56.361 141.444H115.573L111.487 137.511C109.654 135.747 108.199 133.652 107.207 131.346C106.215 129.04 105.704 126.568 105.704 124.072V117.694M145.179 41.6943V103.444C145.179 107.224 143.619 110.848 140.843 113.521C138.067 116.193 134.302 117.694 130.376 117.694H41.558C37.632 117.694 33.8668 116.193 31.0907 113.521C28.3146 110.848 26.755 107.224 26.755 103.444V41.6943M145.179 41.6943C145.179 37.915 143.619 34.2905 140.843 31.6181C138.067 28.9457 134.302 27.4443 130.376 27.4443H41.558C37.632 27.4443 33.8668 28.9457 31.0907 31.6181C28.3146 34.2905 26.755 37.915 26.755 41.6943M145.179 41.6943V84.4443C145.179 88.2237 143.619 91.8482 140.843 94.5206C138.067 97.193 134.302 98.6943 130.376 98.6943H41.558C37.632 98.6943 33.8668 97.193 31.0907 94.5206C28.3146 91.8482 26.755 88.2237 26.755 84.4443V41.6943" stroke="#1E35FE" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -81,79 +90,94 @@ import Scrollbar from "../components/Scrollbar.astro";
 								<rect width="157.899" height="152" fill="white"/>
 								</clipPath>
 								</defs>
-							</svg>										  
-							<h6>User Research</h6>
-							<svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
+							</svg>	
+							<div class="w-[200px] md:w-[250-px] lg:w-[280px]">									  
+								<h6 class="text-[#384AEB]">User Research</h6>
+								<p>In my user research, I perform tests like the BERT test, 5-second test, and Thinking Out Loud to evaluate usability, gather insights, and improve website design.</p>
+							</div>
+							<!-- <svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
 								<path d="M12.5226 2L3.99999 15.2477L12.5226 28.4954" stroke="#384AEB" stroke-width="6"/>
 							</svg>
 						</summary>
 						<div class="py-7">
 							<slot/>
-						</div>
+						</div> -->
 					</details>
-					<details class="group md:border-b-4 border-[#FFFFFF] p-3 w-full  ">
-						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center cursor-pointer">
-							<svg width="75" height="75" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<details class="group p-6 w-full">
+						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center">
+							<svg class="flex justify-center items-center" width="75" height="75" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M89.5597 112.237C95.3501 113.915 101.35 114.763 107.379 114.757C117.076 114.771 126.647 112.565 135.355 108.309C135.612 102.238 133.879 96.249 130.418 91.2495C126.957 86.2499 121.957 82.5124 116.175 80.6033C110.394 78.6943 104.146 78.7178 98.379 80.6703C92.6121 82.6228 87.6403 86.3979 84.2172 91.4234M89.5597 112.237V112.217C89.5597 104.678 87.6182 97.5869 84.2172 91.4234M89.5597 112.237V112.955C76.4952 120.806 61.5275 124.942 46.2765 124.917C30.4526 124.917 15.6469 120.548 3.00679 112.955L3.00001 112.217C2.9948 102.629 6.18796 93.3126 12.0761 85.7357C17.9642 78.1588 26.2123 72.7527 35.5201 70.3697C44.8278 67.9867 54.6658 68.7623 63.4829 72.5743C72.3001 76.3863 79.5949 83.0178 84.2172 91.4234M69.1943 25.8594C69.1943 31.922 66.7805 37.7364 62.4838 42.0234C58.1872 46.3103 52.3596 48.7187 46.2833 48.7187C40.2069 48.7187 34.3793 46.3103 30.0827 42.0234C25.786 37.7364 23.3722 31.922 23.3722 25.8594C23.3722 19.7967 25.786 13.9823 30.0827 9.69535C34.3793 5.40839 40.2069 3 46.2833 3C52.3596 3 58.1872 5.40839 62.4838 9.69535C66.7805 13.9823 69.1943 19.7967 69.1943 25.8594ZM125.199 41.0989C125.199 45.8143 123.322 50.3366 119.98 53.6709C116.638 57.0052 112.106 58.8784 107.379 58.8784C102.653 58.8784 98.1208 57.0052 94.779 53.6709C91.4371 50.3366 89.5597 45.8143 89.5597 41.0989C89.5597 36.3835 91.4371 31.8612 94.779 28.5269C98.1208 25.1926 102.653 23.3194 107.379 23.3194C112.106 23.3194 116.638 25.1926 119.98 28.5269C123.322 31.8612 125.199 36.3835 125.199 41.0989Z" stroke="#1E35FE" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>																	  
-							<h6>Design Research</h6>
-							<svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
+								</svg>	
+							<div class="w-[200px] md:w-[250-px] lg:w-[280px]">																	  
+								<h6 class="text-[#384AEB]">Design Research</h6>
+								<p>In my design research, I focus on pattern research, trend analysis, and benchmarking to inform and improve design decisions.</p>
+							</div>
+							<!-- <svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
 								<path d="M12.5226 2L3.99999 15.2477L12.5226 28.4954" stroke="#384AEB" stroke-width="6"/>
 							</svg>
 						</summary>
 						<div class="py-7">
 							<slot/>
-						</div>
+						</div> -->
 					</details>
 				</div>
 				<div>
-					<details class="group border-b-4 border-t-4 border-[#FFFFFF] p-3 w-full  ">
-						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center cursor-pointer">
+					<details class="group p-6 w-full  ">
+						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center">
 							<svg width="75" height="75" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M26.5625 1.20902e-05H123.438C126.927 -0.00336079 130.382 0.699013 133.606 2.06694C136.831 3.43486 139.76 5.44148 142.227 7.97195C144.695 10.5024 146.651 13.5071 147.985 16.8139C149.318 20.1208 150.003 23.665 150 27.2436V122.756C150.003 126.335 149.318 129.879 147.985 133.186C146.651 136.493 144.695 139.498 142.227 142.028C139.76 144.559 136.831 146.565 133.606 147.933C130.382 149.301 126.927 150.003 123.438 150H26.5625C23.0733 150.003 19.6178 149.301 16.3936 147.933C13.1694 146.565 10.2399 144.559 7.77265 142.028C5.30544 139.498 3.34899 136.493 2.01526 133.186C0.681538 129.879 -0.00327677 126.335 1.1788e-05 122.756V27.2436C-0.00327677 23.665 0.681538 20.1208 2.01526 16.8139C3.34899 13.5071 5.30544 10.5024 7.77265 7.97195C10.2399 5.44148 13.1694 3.43486 16.3936 2.06694C19.6178 0.699013 23.0733 -0.00336079 26.5625 1.20902e-05Z" fill="#384AEB"/>
 								<path d="M33.75 105.192V39.2309C33.75 38.7821 33.9375 38.5257 34.375 38.5257C35.4375 38.5257 36.4375 38.5257 37.875 38.4616C39.3125 38.3975 40.9375 38.3975 42.625 38.3334C44.3125 38.2693 46.125 38.2693 48.0625 38.2052C50 38.1411 51.875 38.1411 53.75 38.1411C58.875 38.1411 63.125 38.7821 66.625 40.1283C69.7625 41.2211 72.6233 43.0167 75 45.3847C77.0139 47.457 78.5699 49.9492 79.5625 52.6924C80.5086 55.3638 80.995 58.1835 81 61.0257C81 66.5385 79.75 71.0898 77.25 74.6796C74.7384 78.2644 71.2317 80.9897 67.1875 82.5001C62.9375 84.1026 58.25 84.6796 53.125 84.6796C51.625 84.6796 50.625 84.6796 50 84.6155C49.375 84.5514 48.5 84.5514 47.3125 84.5514V105.128C47.3264 105.234 47.3196 105.341 47.2924 105.444C47.2651 105.546 47.218 105.643 47.1539 105.726C47.0898 105.81 47.0099 105.88 46.9191 105.931C46.8282 105.982 46.7282 106.015 46.625 106.026H34.5C34 106.026 33.75 105.769 33.75 105.192ZM47.375 50.8975V72.436C48.25 72.5001 49.0625 72.5642 49.8125 72.5642H53.125C55.5649 72.5672 57.9902 72.1778 60.3125 71.4103C62.3049 70.8094 64.085 69.6294 65.4375 68.0129C66.75 66.4103 67.375 64.2309 67.375 61.4103C67.4338 59.4072 66.9352 57.4283 65.9375 55.7052C64.8954 54.0408 63.3627 52.7608 61.5625 52.0514C59.2161 51.1088 56.7056 50.6724 54.1875 50.7693C52.5625 50.7693 51.125 50.7693 49.9375 50.8334C49.0832 50.7761 48.2256 50.7976 47.375 50.8975Z" fill="white"/>
 								<path d="M120 68.525C118.113 67.5056 116.092 66.7715 114 66.3455C111.703 65.8118 109.356 65.5325 107 65.5122C105.735 65.4674 104.471 65.6187 103.25 65.9609C102.472 66.127 101.781 66.584 101.313 67.2429C100.997 67.7631 100.824 68.3611 100.813 68.9737C100.842 69.5836 101.061 70.1677 101.438 70.6404C102.03 71.353 102.752 71.9408 103.563 72.3711C105 73.1404 106.5 73.8455 108 74.4865C111.377 75.6524 114.608 77.2231 117.625 79.166C119.678 80.4897 121.375 82.3186 122.563 84.4865C123.567 86.5315 124.061 88.8001 124 91.0891C124.051 94.1189 123.201 97.0927 121.563 99.6147C119.819 102.174 117.387 104.156 114.563 105.32C111.5 106.666 107.75 107.371 103.25 107.371C100.397 107.383 97.5497 107.104 94.7503 106.538C92.546 106.147 90.4021 105.457 88.3753 104.486C88.1573 104.374 87.9762 104.199 87.854 103.983C87.7319 103.767 87.6741 103.518 87.6878 103.269V92.1147C87.6824 92.0052 87.7022 91.8959 87.7456 91.7956C87.789 91.6954 87.8549 91.6071 87.9378 91.5378C88.0258 91.4852 88.128 91.463 88.2293 91.4745C88.3306 91.4861 88.4256 91.5307 88.5003 91.6019C90.9078 93.0576 93.5228 94.1175 96.2503 94.7429C98.6584 95.3856 101.137 95.7087 103.625 95.7044C106 95.7044 107.688 95.3839 108.813 94.807C109.315 94.5693 109.74 94.1897 110.039 93.7129C110.338 93.236 110.498 92.6816 110.5 92.1147C110.5 91.2173 110 90.3839 109 89.5506C108 88.7173 105.938 87.7557 102.875 86.5378C99.7336 85.4024 96.75 83.8508 94.0003 81.9224C92.0418 80.4908 90.4191 78.6294 89.2503 76.4737C88.2528 74.4491 87.759 72.203 87.8128 69.9352C87.822 67.1999 88.5565 64.5187 89.9378 62.1789C91.5255 59.6055 93.8044 57.5576 96.5003 56.2814C99.4378 54.743 103.125 54.0378 107.563 54.0378C110.156 54.0386 112.746 54.2314 115.313 54.6148C117.158 54.8709 118.964 55.3663 120.688 56.0891C120.962 56.1889 121.187 56.3964 121.313 56.666C121.385 56.9163 121.427 57.1746 121.438 57.4353V67.884C121.439 68.0085 121.411 68.1316 121.357 68.243C121.302 68.3544 121.223 68.4511 121.125 68.525C120.762 68.6591 120.364 68.6591 120 68.525Z" fill="white"/>
-							</svg>																	  
-							<h6>Photoshop</h6>
-							<svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
+							</svg>	
+							<div class="w-[200px] md:w-[250-px] lg:w-[280px]">															  
+								<h6 class="text-[#384AEB]">Photoshop</h6>
+								<p>In Photoshop, I use Camera Raw for editing, along with retouching, layering, and masking to enhance images and create polished designs.</p>
+							</div>
+							<!-- <svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
 								<path d="M12.5226 2L3.99999 15.2477L12.5226 28.4954" stroke="#384AEB" stroke-width="6"/>
 							</svg>
 						</summary>
 						<div class="py-7">
 							<slot/>
-						</div>
+						</div> -->
 					</details>
-					<details class="group border-b-4 border-[#FFFFFF] p-3 w-full  ">
-						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center cursor-pointer">
+					<details class="group p-6 w-full  ">
+						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center">
 							<svg width="75" height="75" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M26.5625 1.20902e-05H123.438C126.927 -0.00336079 130.382 0.699013 133.606 2.06694C136.831 3.43486 139.76 5.44148 142.227 7.97195C144.695 10.5024 146.651 13.5071 147.985 16.8139C149.318 20.1208 150.003 23.665 150 27.2436V122.756C150.003 126.335 149.318 129.879 147.985 133.186C146.651 136.493 144.695 139.498 142.227 142.028C139.76 144.559 136.831 146.565 133.606 147.933C130.382 149.301 126.927 150.003 123.438 150H26.5625C23.0733 150.003 19.6178 149.301 16.3936 147.933C13.1694 146.565 10.2399 144.559 7.77265 142.028C5.30544 139.498 3.34899 136.493 2.01526 133.186C0.681538 129.879 -0.00327677 126.335 1.1788e-05 122.756V27.2436C-0.00327677 23.665 0.681538 20.1208 2.01526 16.8139C3.34899 13.5071 5.30544 10.5024 7.77265 7.97195C10.2399 5.44148 13.1694 3.43486 16.3936 2.06694C19.6178 0.699013 23.0733 -0.00336079 26.5625 1.20902e-05Z" fill="#384AEB"/>
 								<path d="M72.6869 90H49.4369L44.6869 105.064C44.6338 105.339 44.4825 105.583 44.2628 105.749C44.0431 105.915 43.7708 105.991 43.4994 105.962H31.7494C31.0619 105.962 30.8744 105.577 31.0619 104.808L51.1869 45.3846C51.3744 44.7436 51.5619 44.0385 51.8119 43.2693C52.0634 41.8954 52.189 40.5004 52.1869 39.1026C52.1682 38.942 52.2093 38.7802 52.302 38.6494C52.3947 38.5186 52.5322 38.4287 52.6869 38.3975H68.8744C69.3744 38.3975 69.6244 38.5898 69.6869 38.9103L92.4994 104.936C92.6869 105.641 92.4994 105.962 91.8744 105.962H78.8119C78.591 105.983 78.3696 105.925 78.1867 105.796C78.0038 105.667 77.8711 105.476 77.8119 105.256L72.6869 90ZM53.0619 76.9872H68.9369C68.5619 75.6411 68.0619 74.0385 67.4994 72.3718C66.9369 70.7052 66.3744 68.7821 65.8119 66.859C65.2494 64.9359 64.6244 62.9487 63.9994 60.9616C63.3744 58.9744 62.8119 57.1154 62.3119 55.2564C61.8119 53.3975 61.3744 51.7949 60.9369 50.2564H60.8119C60.2502 53.0503 59.5408 55.8108 58.6869 58.5257C57.7494 61.6026 56.8119 64.8077 55.8119 68.0129C54.9369 71.2821 53.9994 74.2949 53.0619 76.9872Z" fill="white"/>
 								<path d="M106.126 49.3593C105.1 49.3823 104.08 49.1958 103.125 48.8106C102.17 48.4255 101.3 47.8493 100.564 47.1157C99.132 45.5099 98.3693 43.3932 98.4389 41.2183C98.402 40.1585 98.5833 39.1027 98.971 38.1197C99.3587 37.1367 99.944 36.2485 100.689 35.5131C102.191 34.0568 104.184 33.2529 106.251 33.2695C108.689 33.2695 110.564 34.0388 111.939 35.5131C113.323 37.0675 114.063 39.1138 114.001 41.2183C114.039 42.3013 113.866 43.3812 113.49 44.3942C113.114 45.4071 112.544 46.3325 111.814 47.1157C111.077 47.8851 110.189 48.4835 109.208 48.8705C108.226 49.2575 107.176 49.4242 106.126 49.3593ZM99.1264 105V55.6413C99.1264 55.0003 99.3764 54.7439 99.9389 54.7439H112.314C112.876 54.7439 113.126 55.0644 113.126 55.6413V105C113.126 105.705 112.876 106.026 112.314 106.026H100.064C99.9325 106.037 99.8004 106.018 99.6775 105.969C99.5545 105.92 99.4438 105.844 99.3536 105.745C99.2635 105.647 99.1962 105.529 99.1569 105.4C99.1175 105.271 99.1071 105.134 99.1264 105Z" fill="white"/>
-							</svg>																															  
-							<h6>Illustrator</h6>
-							<svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
+							</svg>			
+							<div class="w-[200px] md:w-[250-px] lg:w-[280px]">																													  
+								<h6  class="text-[#384AEB]">Illustrator</h6>
+								<p>In Illustrator, I work with vector graphics, utilizing tools like the Pen tool, shape builder, and pathfinder for creating precise illustrations and designs.</p>
+							</div>
+							<!-- <svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
 								<path d="M12.5226 2L3.99999 15.2477L12.5226 28.4954" stroke="#384AEB" stroke-width="6"/>
 							</svg>
 						</summary>
 						<div class="py-7">
 							<slot/>
-						</div>
+						</div> -->
 					</details>
-					<details class="group border-b-4 border-[#FFFFFF] p-3 w-full  ">
-						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center cursor-pointer">
+					<details class="group p-6 w-full  ">
+						<summary class="grid grid-cols-[1fr_1fr_3fr] gap-4 items-center">
 							<svg width="75" height="75" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M26.5625 1.20902e-05H123.438C126.927 -0.00336079 130.382 0.699013 133.606 2.06694C136.831 3.43486 139.76 5.44148 142.227 7.97195C144.695 10.5024 146.651 13.5071 147.985 16.8139C149.318 20.1208 150.003 23.665 150 27.2436V122.756C150.003 126.335 149.318 129.879 147.985 133.186C146.651 136.493 144.695 139.498 142.227 142.028C139.76 144.559 136.831 146.565 133.606 147.933C130.382 149.301 126.927 150.003 123.438 150H26.5625C23.0733 150.003 19.6178 149.301 16.3936 147.933C13.1694 146.565 10.2399 144.559 7.77265 142.028C5.30544 139.498 3.34899 136.493 2.01526 133.186C0.681538 129.879 -0.00327677 126.335 1.1788e-05 122.756V27.2436C-0.00327677 23.665 0.681538 20.1208 2.01526 16.8139C3.34899 13.5071 5.30544 10.5024 7.77265 7.97195C10.2399 5.44148 13.1694 3.43486 16.3936 2.06694C19.6178 0.699013 23.0733 -0.00336079 26.5625 1.20902e-05Z" fill="#384AEB"/>
 								<path d="M78.751 106.026H39.1259C38.4384 106.026 38.1259 105.641 38.1259 104.872V39.3591C38.112 39.2536 38.1188 39.1463 38.1461 39.0436C38.1733 38.9409 38.2204 38.8448 38.2845 38.7611C38.3486 38.6774 38.4285 38.6078 38.5193 38.5563C38.6102 38.5049 38.7102 38.4727 38.8134 38.4616H51.3134C51.3916 38.447 51.4719 38.4489 51.5494 38.467C51.6268 38.4851 51.6999 38.5192 51.7642 38.5672C51.8285 38.6151 51.8826 38.6759 51.9233 38.7459C51.964 38.8159 51.9904 38.8937 52.0009 38.9745V93.0129H80.876C81.501 93.0129 81.6885 93.3334 81.5635 93.9103L79.751 105.064C79.7412 105.211 79.703 105.355 79.6387 105.487C79.5743 105.619 79.485 105.737 79.376 105.833C79.1927 105.964 78.9739 106.031 78.751 106.026Z" fill="white"/>
 								<path d="M88.751 54.7443H99.6885C99.9848 54.7516 100.271 54.8547 100.507 55.0389C100.743 55.2231 100.916 55.4789 101.001 55.7699C101.259 56.2234 101.429 56.7242 101.501 57.2443C101.626 57.8853 101.751 58.5904 101.814 59.2315C101.876 59.8725 101.939 60.7058 101.939 61.5391C103.815 59.2922 106.083 57.4228 108.626 56.0263C111.481 54.4388 114.691 53.6434 117.939 53.7186C118.041 53.7043 118.146 53.7114 118.246 53.7393C118.346 53.7672 118.44 53.8155 118.522 53.8813C118.603 53.947 118.671 54.0289 118.721 54.1221C118.771 54.2153 118.803 54.3179 118.814 54.4238V67.1802C118.814 67.693 118.501 67.8853 117.814 67.8853C113.763 67.6365 109.713 68.3838 106.001 70.0648C104.735 70.6203 103.588 71.4263 102.626 72.4366V105.129C102.626 105.77 102.376 106.026 101.814 106.026H89.626C89.5107 106.046 89.3927 106.042 89.2791 106.014C89.1655 105.985 89.0587 105.934 88.9652 105.862C88.8716 105.79 88.7933 105.699 88.735 105.595C88.6767 105.491 88.6396 105.376 88.626 105.257V69.4879C88.626 67.9494 88.626 66.3468 88.5635 64.6802C88.501 63.0135 88.501 61.3468 88.4385 59.6802C88.376 58.2699 88.251 56.8597 88.0635 55.4494C88.0469 55.3736 88.0451 55.2952 88.0581 55.2188C88.0712 55.1423 88.0988 55.0691 88.1395 55.0036C88.1801 54.9381 88.233 54.8815 88.295 54.837C88.3571 54.7925 88.4271 54.761 88.501 54.7443C88.5635 54.6802 88.626 54.6802 88.751 54.7443Z" fill="white"/>
-							</svg>																															  
-							<h6>Lightroom</h6>
-							<svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
+							</svg>		
+							<div class="w-[200px] md:w-[250-px] lg:w-[280px]">																														  
+								<h6 class="text-[#384AEB]">Lightroom</h6>
+								<p>In Lightroom, I manage photo editing with exposure adjustments, color grading, and presets to enhance and organize my photography workflow.</p>
+							</div>
+							<!-- <svg class="justify-self-end transform transition-transform group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="31" viewBox="0 0 16 31" fill="none">
 								<path d="M12.5226 2L3.99999 15.2477L12.5226 28.4954" stroke="#384AEB" stroke-width="6"/>
 							</svg>
 						</summary>
 						<div class="py-7">
 							<slot/>
-						</div>
+						</div> -->
 					</details>
 				</div>
 			</section>
@@ -161,7 +185,7 @@ import Scrollbar from "../components/Scrollbar.astro";
 		<section></section>
 		<section id="whatyougive" class="mt-[370px] mx-16 md:ml-24 lg:ml-40">
 			<h1 class="mb-16">what can you give me?</h1>
-			<p>I'm looking for an internship to gain hands-on experience and strengthen my skills in interaction design, UI/UX, and responsive design. I'm eager to learn from experienced designers and deepen my understanding of design processes and different Adobe Programs.</p>
+			<p class="w-[300px] md:mx-6 md:w-[350px] lg:w-[450px]" >I'm looking for an internship to gain hands-on experience and strengthen my skills in interaction design, UI/UX, and responsive design. I'm eager to learn from experienced designers and deepen my understanding of design processes and different Adobe Programs.</p>
 			<div class="relative mt-14 md:ml-5 lg:ml-32 w-[300px] md:w-[600px]">
 				<div class="flex flex-row justify-between">
 					<h6 class="text-[#384AEB] uppercase flex">before</h6>
@@ -215,14 +239,14 @@ import Scrollbar from "../components/Scrollbar.astro";
 			<h1 class="mt-[270px] mb-10">why me?</h1>
 			<div class="flex flex-col lg:flex-row">
 			<div>
-				<p>On the right you see my most recent project, which was developed in a group-setting, where i was a part of making the mock-up and coding the front-page.</p>
-				<p class="mt-6">I love working with others and thrive in a team environment, where I learn from my fellow teammates as well as sharing my knowledge. </p>
+				<p class="w-[300px] md:mx-6 md:w-[350px] lg:w-[450px]">On the right you see my most recent project, which was developed in a group-setting, where i was a part of making the mock-up and coding the front-page.</p>
+				<p class="mt-6 w-[300px] md:mx-6 md:w-[350px] lg:w-[450px]">I love working with others and thrive in a team environment, where I learn from my fellow teammates as well as sharing my knowledge. </p>
 				<h4 class="mt-6 w-[300px] md:mx-6 md:w-[350px] lg:w-[450px]">See more projects:</h4>
 				<ul class="uppercase pl-14">
-					<h6 class="hover:underline"><a href="">Digital cleanup day</a></h6>
-					<h6 class="hover:underline"><a href="">Flid marked</a></h6>
-					<h6 class="hover:underline"><a href="">Vild mad</a></h6>
-					<h6 class="hover:underline"><a href="">Ark books</a></h6>
+					<h6 class="hover:underline"><a href="/https://digitalskraldeday.netlify.app/">Digital cleanup day</a></h6>
+					<h6 class="hover:underline"><a href="/https://flid.netlify.app/">Flid marked</a></h6>
+					<h6 class="hover:underline"><a href="/https://slowcreate.github.io/vildmad_website/">Vild mad</a></h6>
+					<h6 class="hover:underline"><a href="/https://superb-pithivier-e239e5.netlify.app/">Ark books</a></h6>
 				</ul>
 			</div>
 			<div class="relative mx-14 my-10">

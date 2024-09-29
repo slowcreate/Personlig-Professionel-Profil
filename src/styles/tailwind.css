@@ -42,7 +42,7 @@
     @apply font-extrabold text-lg md:text-xl;
   }
   p {
-    @apply text-base md:text-base w-[300px] md:mx-6 md:w-[350px] lg:w-[450px];
+    @apply text-base md:text-base;
   }
 }
 

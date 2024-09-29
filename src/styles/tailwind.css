@@ -6,7 +6,7 @@
 
 @layer base {
   .outfit {
-    font-family: "Outfit";
+    font-family: "outfit";
     font-weight: 200;
   }
 
@@ -41,8 +41,9 @@
   h6 {
     @apply font-extrabold text-lg md:text-xl;
   }
-  p {
-    @apply text-base md:text-base;
+  p,
+  li {
+    @apply outfit;
   }
 }
 

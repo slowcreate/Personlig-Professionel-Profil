@@ -4,20 +4,25 @@ const {text} = Astro.props;
 
 <div class="overflow-hidden whitespace-nowrap background border-white border-y py-2 md:p-4">
   <div class="inline-block animate-scroll min-w-full">
-     <span class="text-white background text-lg md:text-2xl font-extrabold text-start">{text}</span>
-    
+    <span class="text-white background text-lg md:text-2xl font-extrabold text-start">
+      {text.split(' ').join('   ')} {/* Adjust this for space between words */}
+    </span>
   </div>
-    <div class="inline-block animate-scroll min-w-full ">
-     <span class="text-white background text-lg md:text-2xl font-extrabold text-start">{text}</span>
+  <div class="inline-block animate-scroll min-w-full">
+    <span class="text-white background text-lg md:text-2xl font-extrabold text-start">
+      {text.split(' ').join('   ')} {/* Adjust this for space between words */}
+    </span>
   </div>
 </div>
 
 
 
 
+
 <style>
 .animate-scroll {
-  animation: scroll 25s linear infinite;
+  animation: scroll 40s linear infinite;
+  animation-delay: 0s;
 }
 
 .overflow-hidden {
@@ -28,4 +33,19 @@ const {text} = Astro.props;
   display: inline-block;
   white-space: nowrap;
 }
+
+.text-white {
+  word-spacing: 4rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
 </style>

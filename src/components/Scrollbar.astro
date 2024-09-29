@@ -3,13 +3,13 @@ const {text} = Astro.props;
 ---
 
 <div class="overflow-hidden whitespace-nowrap background border-white border-y py-2 md:p-4">
-  <div class="inline-block animate-scroll min-w-full">
-    <span class="text-white background text-lg md:text-2xl font-extrabold text-start">
+  <div class="inline-block animate-scroll min-w-full text-start justify-start">
+    <span class="text-white background text-lg md:text-2xl font-extrabold text-start justify-start">
       {text.split(' ').join('   ')} {/* Adjust this for space between words */}
     </span>
   </div>
-  <div class="inline-block animate-scroll min-w-full">
-    <span class="text-white background text-lg md:text-2xl font-extrabold text-start">
+  <div class="inline-block animate-scroll min-w-full text-start justify-start">
+    <span class="text-white background text-lg md:text-2xl font-extrabold text-start justify-start">
       {text.split(' ').join('   ')} {/* Adjust this for space between words */}
     </span>
   </div>

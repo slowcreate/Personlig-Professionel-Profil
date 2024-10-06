@@ -39,7 +39,7 @@
     @apply text-lg md:text-xl;
   }
   h6 {
-    @apply text-lg md:text-xl;
+    @apply font-extrabold text-lg md:text-xl;
   }
   p,
   li {
